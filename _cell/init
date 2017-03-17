@@ -1,0 +1,11 @@
+#!/bin/bash
+
+npm init -f
+
+npm install immutable --save
+npm install commander --save
+npm install express --save
+
+npm i --save react react-dom @types/react @types/react-dom
+npm install gulp
+npm install gulp-typescript

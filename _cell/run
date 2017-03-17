@@ -1,0 +1,3 @@
+#!/bin/bash
+useradd --non-unique -u 1000  -d /vhome ritchie
+exec /sbin/setuser ritchie /cells/xirsys/dev/_cell/start
