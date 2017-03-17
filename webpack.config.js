@@ -5,7 +5,7 @@ module.exports = {
     entry: "./src/index.tsx",
     output: {
         filename: "bundle.js",
-        path: path.join(__dirname, "public"),
+        path: path.join(__dirname, "public", "assets"),
         publicPath: "/assets/"
     },
 
@@ -21,7 +21,8 @@ module.exports = {
     module: {
         loaders: [
             // All files with a '.ts' or '.tsx' extension will be handled by 'awesome-typescript-loader'.
-            { test: /\.tsx?$/, loader: "awesome-typescript-loader" }
+            { test: /\.tsx?$/, loader: "awesome-typescript-loader" },
+            { test: /\.styl$/, loader: 'style-loader!css-loader!stylus-loader' }
         ],
 
     },

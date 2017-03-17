@@ -1,11 +1,12 @@
 #!/bin/bash
 
-npm init -f
+export PATH=$PATH:/usr/bin
+yarn add immutable 
+yarn add commander
+yarn add express
 
-npm install immutable --save
-npm install commander --save
-npm install express --save
-
-npm i --save react react-dom @types/react @types/react-dom
-npm install gulp
-npm install gulp-typescript
+yarn add --dev style-loader
+yarn add --dev css-loader
+yarn add --dev stylus-loader stylus
+yarn add --dev @types/react @types/react-dom
+yarn add webpack
